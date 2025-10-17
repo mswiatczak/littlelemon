@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&family=Markazi+Text:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16pt;
+  color: #333333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  font-family: "karla", sans-serif;
+  font-size: 15px;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::placeholder {
+  color: #949494;
+  opacity: 1; /* Firefox */
 }
 
-.App-link {
-  color: #61dafb;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #333333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #333333;
+}
+
+h1,
+h2 {
+  font-family: "Markazi Text", serif;
+}
+
+h1 {
+  font-size: 64pt;
+}
+
+h2 {
+  font-size: 40pt;
+}
+
+h3 {
+  font-size: 18pt;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
 }
