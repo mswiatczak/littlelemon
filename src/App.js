@@ -2,6 +2,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<div>Home Page</div>} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<div>About Page</div>} />
             <Route path="/menu" element={<div>Menu Page</div>} />
             <Route

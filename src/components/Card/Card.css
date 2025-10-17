@@ -1,0 +1,97 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 700px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.card-image-container {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.svg-image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.card-content {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.card-title {
+  font-size: 1.95rem;
+  color: #333;
+  margin: 0;
+}
+
+.card-price {
+  font-size: 1.56rem;
+  font-weight: 700;
+  color: #ee9972;
+  margin: 0;
+}
+
+.card-description {
+  font-size: 1.3rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 39px;
+  flex-grow: 1;
+}
+
+.card-button {
+  background-color: transparent;
+  color: #333;
+  border: 2.6px solid #333;
+  border-radius: 5.2px;
+  padding: 13px 19.5px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 10.4px;
+}
+
+.card-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.button-icon {
+  font-size: 23.4px;
+  transition: color 0.3s ease;
+}

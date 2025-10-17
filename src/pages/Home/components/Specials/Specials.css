@@ -1,0 +1,58 @@
+.specials {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.specials-container {
+  padding: 40px 20px;
+}
+
+.specials-header {
+  display: block;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.specials-header h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.menu-button {
+  background-color: #f4ce14;
+  color: #333;
+  border: none;
+  border-radius: 16px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #e6b910;
+}
+
+.specials-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .specials-container {
+    padding: 20px 15px;
+  }
+
+  .specials-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .specials-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
