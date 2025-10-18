@@ -12,11 +12,11 @@ export default function Hero() {
           We are a family owned Mediterranean restaurant, focused on traditional
           recipes served with a modern twist.
         </p>
-        <Button text="Reserve a Table" href={"#"} />
+        <Button text="Reserve a Table" href={"/reservations"} />
       </div>
       <div className="hero-image">
         <img src={restaurantFood} alt="hero chef" />
-        <Button text="Online Menu" />
+        <Button text="Online Menu" href={"/menu"} />
       </div>
     </div>
   );

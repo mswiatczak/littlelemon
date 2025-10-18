@@ -21,26 +21,25 @@
   gap: 20px;
   position: absolute;
   right: 10rem;
-  top: 5rem;
+  top: 7rem;
 }
 
 .hero-image img {
-  width: 500px;
-  height: 400px;
+  width: 450px !important;
+  height: 400px !important;
   border-radius: 16px;
   object-fit: cover;
-  aspect-ratio: 1/1;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  color: #f4ce14;
+  font-size: 5rem !important;
+  color: #f4ce14 !important;
   margin-bottom: 0;
   font-family: "Markazi Text", serif;
 }
 
 .hero h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #fff;
   margin-top: 0;
   font-family: "Markazi Text", serif;
@@ -48,7 +47,7 @@
 
 .hero p {
   font-size: 1.2rem;
-  color: #fff;
+  color: #fff !important;
   line-height: 1.5;
   margin-bottom: 30px;
   font-family: "Karla", sans-serif;
