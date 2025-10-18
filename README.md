@@ -34,7 +34,7 @@ Little Lemon is a family-owned Mediterranean restaurant that brings traditional 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/littlelemon.git
+   git clone https://github.com/mswiatczak/littlelemon.git
    ```
 
 2. Navigate to the project directory:
