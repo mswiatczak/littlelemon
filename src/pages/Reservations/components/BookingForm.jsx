@@ -100,6 +100,7 @@ export default function BookingForm() {
       occasion: "none",
       additionalInfo: "",
     });
+    setErrors({});
     setIsSubmitted(false);
     setConfirmationId("");
   };

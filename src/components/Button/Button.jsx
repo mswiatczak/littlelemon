@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.css";
 
-export default function Button({ text, href, type }) {
+export default function Button({ text, href, type, onClick }) {
   if (href) {
     return (
       <a href={href} className="Button">
@@ -11,7 +11,7 @@ export default function Button({ text, href, type }) {
   }
 
   return (
-    <button type={type || "button"} className="Button">
+    <button type={type || "button"} className="Button" onClick={onClick}>
       {text}
     </button>
   );
