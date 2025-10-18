@@ -4,7 +4,7 @@
 }
 
 .specials-container {
-  padding: 40px 20px;
+  padding: 40px 20px 80px 20px;
 }
 
 .specials-header {
@@ -40,11 +40,17 @@
   display: flex;
   gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.specials-cards .card {
+  flex: 1;
+  min-width: 300px;
 }
 
 @media (max-width: 768px) {
   .specials-container {
-    padding: 20px 15px;
+    padding: 20px 15px 60px 15px;
   }
 
   .specials-header h1 {
@@ -54,5 +60,10 @@
   .specials-cards {
     flex-direction: column;
     align-items: center;
+  }
+
+  .specials-cards .card {
+    width: 100%;
+    max-width: none;
   }
 }

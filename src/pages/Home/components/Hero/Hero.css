@@ -54,16 +54,38 @@
   font-family: "Karla", sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hero {
     flex-direction: column;
     text-align: center;
+    padding: 3rem 1.5rem 2rem;
+    position: relative;
   }
 
-  .hero-text,
+  .hero-text {
+    flex: none;
+    width: 100%;
+    margin-bottom: 2rem;
+    order: 1;
+  }
+
   .hero-image {
     flex: none;
     width: 100%;
+    position: relative;
+    right: auto;
+    top: auto;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
   }
 
   .hero h1 {
@@ -72,5 +94,10 @@
 
   .hero h2 {
     font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
   }
 }
