@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.css";
 
-export default function Button({ text, href }) {
+export default function Button({ text, href, type }) {
   if (href) {
     return (
       <a href={href} className="Button">
@@ -10,5 +10,9 @@ export default function Button({ text, href }) {
     );
   }
 
-  return <button className="Button">{text}</button>;
+  return (
+    <button type={type || "button"} className="Button">
+      {text}
+    </button>
+  );
 }

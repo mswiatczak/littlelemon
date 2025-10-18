@@ -1,0 +1,170 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  resize: none;
+  min-height: 80px;
+}
+
+.form-group select {
+  padding-right: 40px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #495e57;
+}
+
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #d32f2f;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 0.9rem;
+  font-family: "Karla", sans-serif;
+  margin-top: 0.25rem;
+}
+
+.success-message {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  border: 2px solid #495e57;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-message h2 {
+  color: #495e57;
+  font-family: "Markazi Text", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.success-message p {
+  color: #333;
+  font-family: "Karla", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.confirmation-id {
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.confirmation-id p {
+  font-family: "Karla", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  color: #495e57;
+}
+
+.reservation-details {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+}
+
+.reservation-details p {
+  margin-bottom: 0.75rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.reservation-details strong {
+  color: #495e57;
+  font-weight: 600;
+}
+
+.Button {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  align-self: center;
+  width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .booking-form {
+    gap: 1rem;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    min-height: 70px;
+    resize: none;
+  }
+
+  .form-group select {
+    padding-right: 36px;
+    background-position: right 10px center;
+    background-size: 14px;
+  }
+
+  .success-message h2 {
+    font-size: 2rem;
+  }
+
+  .success-message p {
+    font-size: 1rem;
+  }
+
+  .confirmation-id p {
+    font-size: 1.1rem;
+  }
+}
